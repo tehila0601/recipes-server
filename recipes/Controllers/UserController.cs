@@ -1,5 +1,6 @@
 ﻿using Common.Entity;
 using Microsoft.AspNetCore.Mvc;
+using NETCore.MailKit.Core;
 using Service.Interfaces;
 using Service.Services;
 
@@ -12,10 +13,12 @@ namespace recipes.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService service;
+        private readonly SendEmailService emailService;
 
-        public UserController(IUserService service)
+        public UserController(IUserService service,SendEmailService emailService)
         {
             this.service = service;
+            this.emailService = emailService;
         }
 
         [HttpGet]
@@ -27,7 +30,9 @@ namespace recipes.Controllers
         [HttpGet("{id}")]
         public async Task<UserDto> Get(int id)
         {
-            return await service.GetAsyncById(id);
+            var user = await service.GetAsyncById(id);
+            user.UrlImage = GetImage(user.UrlImage);
+            return user;    
         }
 
         [HttpGet("{email}/{password}")]
@@ -39,7 +44,7 @@ namespace recipes.Controllers
             {
                 return NotFound("User not found");
             }
-
+            user.UrlImage = GetImage(user.UrlImage);
             return user;
         }
 
@@ -78,29 +83,20 @@ namespace recipes.Controllers
                     }
                     userDto.UrlImage = userDto.FilelImage.FileName;
                 }
-                   return Ok(await service.AddItemAsync(userDto));
+                return Ok(await service.AddItemAsync(userDto));
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-
         }
-        //[HttpPost]
-        //public async Task<ActionResult> Post([FromForm] UserDto userDto)
-        //{
 
-        //    var myPath = Path.Combine(Environment.CurrentDirectory + "/Images/" + userDto.FilelImage.FileName);
-        //    Console.WriteLine("myPath: " + myPath);
-
-        //    using (FileStream fs = new FileStream(myPath, FileMode.Create))
-        //    {
-        //        userDto.FilelImage.CopyTo(fs);
-        //        fs.Close();
-        //    }
-        //    userDto.UrlImage = userDto.FilelImage.FileName;
-        //    return Ok(await service.AddItemAsync(userDto));
-        //}
+        [HttpPost("sendEmail")]
+        public async Task<ActionResult> Post([FromBody]EmailDto emailDto)
+        {
+            emailService.SendMailToManager(emailDto);
+           return Ok();
+        }
 
 
         [HttpPut("{id}")]

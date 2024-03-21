@@ -21,7 +21,13 @@ namespace recipes.Controllers
         [HttpGet]
         public async Task<List<RecipeDto>> Get()
         {
-            return await service.GetAllAsync();
+            var recipe = await service.GetAllAsync();
+            foreach (var r in recipe)
+            {
+                r.UrlImage=GetImage(r.UrlImage);
+                r.UrlImageEditor=GetImageEditor(r.UrlImageEditor);
+            }
+            return recipe;
         }
 
         // GET api/<RoleController>/5
@@ -102,12 +108,27 @@ namespace recipes.Controllers
         }
 
 
+
         [HttpGet("getImage/{ImageUrl}")]
         public string GetImage(string ImageUrl)
         {
             if (ImageUrl != "null" && ImageUrl != "")
             {
                 var path = Path.Combine(Environment.CurrentDirectory + "/images/recipies/", ImageUrl);
+                byte[] bytes = System.IO.File.ReadAllBytes(path);
+                string imageBase64 = Convert.ToBase64String(bytes);
+                string image = string.Format("data:image/jpeg;base64,{0}", imageBase64);
+                return image;
+            }
+            else
+                return "error";
+        }
+        [HttpGet("getImageEditor/{ImageUrl}")]
+        public string GetImageEditor(string ImageUrl)
+        {
+            if (ImageUrl != "null" && ImageUrl != "")
+            {
+                var path = Path.Combine(Environment.CurrentDirectory + "/images/", ImageUrl);
                 byte[] bytes = System.IO.File.ReadAllBytes(path);
                 string imageBase64 = Convert.ToBase64String(bytes);
                 string image = string.Format("data:image/jpeg;base64,{0}", imageBase64);

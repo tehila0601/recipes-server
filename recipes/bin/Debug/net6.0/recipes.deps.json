@@ -691,6 +691,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
           "Common": "1.0.0",
+          "NETCore.MailKit": "2.1.0",
           "Repository": "1.0.0"
         },
         "runtime": {

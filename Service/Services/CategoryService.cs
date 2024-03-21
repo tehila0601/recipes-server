@@ -16,10 +16,13 @@ namespace Service.Services
     {
         private readonly IMapper mapper;
         private readonly IRepository<Category> repository;
-        public CategoryService(IRepository<Category> repository, IMapper mapper)
+        private readonly IRepository<User> repositoryUser;
+
+        public CategoryService(IRepository<Category> repository, IMapper mapper, IRepository<User> repositoryUser)
         {
             this.repository = repository;
             this.mapper = mapper;
+            this.repositoryUser = repositoryUser;
         }
         public async Task<CategoryDto> AddItemAsync(CategoryDto item)
         {
@@ -40,7 +43,19 @@ namespace Service.Services
 
         public async Task<List<CategoryDto>> GetAllAsync()
         {
-            return mapper.Map<List<CategoryDto>>(await repository.GetAllAsync());
+            var categories = mapper.Map<List<CategoryDto>>(await repository.GetAllAsync());
+            foreach (var category in categories)
+            {
+                foreach (var recipe in category.Recipes)
+                {
+                    UserDto user = mapper.Map<UserDto>(await repositoryUser.GetAsyncById(recipe.EditorId));
+
+                    recipe.EditorName = user.FirstName + " " + user.LastName;
+                    recipe.UrlImageEditor = user.UrlImage;
+                }
+            }
+            return categories;
+            
         }
 
         public async Task<CategoryDto> UpdateAsync(int id, CategoryDto item)

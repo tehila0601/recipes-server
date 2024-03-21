@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ACW/YGwKdp3ok6w620oLqeZ+ew5BCBHZwcUTPSE5PCIp7Y+LIq/HVEyDkxcQeUDm1B6J11porxpCR9J0AjrTfQ==",
+  "dgSpecHash": "VuMdT7GcPDvY+VzhtBpS3yN5+SUViLDL4k4Zo7r4X3FOgL8d9eKuKuNrfyPNeLwAiKA/+N/1TILNMuWRN38POw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\DataContext\\DataContext.csproj",
+  "projectFilePath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\DataContext\\DataContext.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\תהילה\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

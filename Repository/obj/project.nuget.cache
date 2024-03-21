@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "87gR1y+BksYwJpyA9j3+AgteLvY0evjs1pZnagjlpG98SUHF2nafd58HGt3NlnigmHM0dDcn4lqDu0T2PVLwMw==",
+  "dgSpecHash": "/QBebt+sXJvnOLBGOovp7MemHePi16VahOhzZ8VJ80qchtMybRUjDKJ0uQoAiX9tcN6qvdqZX9E6KY/0HhD75g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj",
+  "projectFilePath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\תהילה\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

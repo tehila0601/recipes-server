@@ -59,7 +59,7 @@ namespace Repository.Repositories
             if (item.Password != null) user.Password = item.Password;
             if (item.Level != 0) user.Level = item.Level;
             if (item.WantNewsletter != 0) user.WantNewsletter = item.WantNewsletter;
-            if (item.UrlImage != null) user.UrlImage = item.UrlImage;
+            if (item.UrlImage != null&& item.UrlImage != "null") user.UrlImage = item.UrlImage;
             user.FavoriteRecipes = item.FavoriteRecipes;
             await _context.save();
 

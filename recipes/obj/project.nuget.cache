@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JPBGd3pNZD8ms1Uv8o/GxqDQwPC4Ur+HjuuffbRBCMjF9MLqjAP4V9EYMv+tPl/AKZeNon7GSxBckTWbX+P9Kg==",
+  "dgSpecHash": "i9oQ4hpyYZ7MqE5vdW8+OIQFPFku51IGyNsKsHv1PQzS3IpEfVvA1HVB8QcKfp1F3stjGtKPupb0YOwvodYWVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\recipes\\recipes.csproj",
+  "projectFilePath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\recipes\\recipes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\תהילה\\.nuget\\packages\\automapper\\8.0.0\\automapper.8.0.0.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.0.0\\automapper.extensions.microsoft.dependencyinjection.6.0.0.nupkg.sha512",

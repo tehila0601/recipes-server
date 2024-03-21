@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Common.Entity;
 using Microsoft.Extensions.DependencyInjection;
+using NETCore.MailKit.Core;
 using Repository;
 using Repository.Entity;
 using Service.Interfaces;
@@ -24,6 +25,7 @@ namespace Service
             services.AddScoped(typeof(IService<IngredientDto>), typeof(IngredientService));
             services.AddScoped(typeof(IService<RecipeDto>), typeof(RecipeService));
             services.AddScoped(typeof(ICommentService), typeof(CommentService));
+            services.AddScoped<SendEmailService>();
 
             //services.AddScoped(<IService<UserDto>, UserService>());
             //services.AddScoped(<IService<MeasureDto>, MeasureService>());

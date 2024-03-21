@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Service\\Service.csproj": {}
+    "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Common\\Common.csproj": {
+    "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\תהילה\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Common\\obj\\",
+        "outputPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj"
+              "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj": {
+    "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\תהילה\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Service\\Service.csproj": {
+    "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\תהילה\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Service\\obj\\",
+        "outputPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,11 +166,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Common\\Common.csproj"
+              "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Common\\Common.csproj"
               },
-              "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj"
+              "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj"
               }
             }
           }
@@ -188,6 +188,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             }
           },
           "imports": [

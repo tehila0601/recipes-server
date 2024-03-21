@@ -1912,11 +1912,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\תהילה\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\ממוין\\תיכנות יד\\פרויקט מתכונים\\c#-obj\\recipes\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\תהילה\\OneDrive\\שולחן העבודה\\פרויקט-גיט\\server\\recipes-server\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

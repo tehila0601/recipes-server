@@ -21,7 +21,17 @@ namespace recipes.Controllers
         [HttpGet]
         public async Task<List<CategoryDto>> Get()
         {
-            return await service.GetAllAsync();
+            var categories = await service.GetAllAsync();
+            foreach (var category in categories)
+            {
+                foreach(var recipe in category.Recipes)
+                {
+                    recipe.UrlImage=GetImagRecipe(recipe.UrlImage);
+                    recipe.UrlImageEditor = GetImage(recipe.UrlImageEditor);
+                }
+                category.UrlImage = GetImage(category.UrlImage);
+            }
+            return categories;
         }
 
         // GET api/<RoleController>/5
@@ -91,7 +101,7 @@ namespace recipes.Controllers
         [HttpGet("getImage/{ImageUrl}")]
         public string GetImage(string ImageUrl)
         {
-            if (ImageUrl != "null" && ImageUrl != "")
+            if (ImageUrl!=null&&ImageUrl != "null" && ImageUrl != "")
             {
                 var path = Path.Combine(Environment.CurrentDirectory + "/images/", ImageUrl);
                 byte[] bytes = System.IO.File.ReadAllBytes(path);
@@ -104,7 +114,20 @@ namespace recipes.Controllers
                 return "error";
             }
         }
-
+        [HttpGet("getImageRecipe/{ImageUrl}")]
+        public string GetImagRecipe(string ImageUrl)
+        {
+            if (ImageUrl != "null" && ImageUrl != "")
+            {
+                var path = Path.Combine(Environment.CurrentDirectory + "/images/recipies/", ImageUrl);
+                byte[] bytes = System.IO.File.ReadAllBytes(path);
+                string imageBase64 = Convert.ToBase64String(bytes);
+                string image = string.Format("data:image/jpeg;base64,{0}", imageBase64);
+                return image;
+            }
+            else
+                return "error";
+        }
     }
 
 }

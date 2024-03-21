@@ -61,7 +61,7 @@ namespace Repository.Repositories
             if (item.LevelOfDifficulty != 0) recipe.LevelOfDifficulty = item.LevelOfDifficulty;
             if (item.NumOfPieces != 0) recipe.NumOfPieces = item.NumOfPieces;
             if (item.UploadTime != DateTime.MinValue) recipe.UploadTime = item.UploadTime;
-            recipe.UrlImage=item.UrlImage;
+            if (item.UrlImage != null && item.UrlImage != "null") recipe.UrlImage = item.UrlImage;
             recipe.UsersLiked = item.UsersLiked;
             recipe.Categories= item.Categories;
 

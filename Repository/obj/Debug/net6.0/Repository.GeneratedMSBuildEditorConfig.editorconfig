@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Repository
-build_property.ProjectDir = C:\Users\תהילה\OneDrive\שולחן העבודה\ממוין\תיכנות יד\פרויקט מתכונים\c#-obj\recipes\Repository\
+build_property.ProjectDir = C:\Users\תהילה\OneDrive\שולחן העבודה\פרויקט-גיט\server\recipes-server\Repository\
